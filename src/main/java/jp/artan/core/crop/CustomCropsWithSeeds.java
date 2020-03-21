@@ -4,7 +4,7 @@ import jp.artan.core.food.CustomFood;
 import jp.artan.core.food.CustomPlant;
 import jp.artan.core.food.CustomSeed;
 
-public abstract class CropsWithSeeds {
+public abstract class CustomCropsWithSeeds {
 
     public final CustomPlant plant;
 
@@ -17,7 +17,7 @@ public abstract class CropsWithSeeds {
      * 
      * @param seed 種
      */
-    public CropsWithSeeds(CustomFood food, CustomSeed seed) {
+    public CustomCropsWithSeeds(CustomFood food, CustomSeed seed) {
         this.food = food;
         this.seed = seed;
         this.plant = this.seed.plant;
