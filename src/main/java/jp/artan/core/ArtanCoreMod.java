@@ -1,7 +1,9 @@
 package jp.artan.core;
 
+import jp.artan.core.event.clock.RightClickHarvesting;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.event.FMLConstructionEvent;
+import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 
 @Mod(modid = ArtanCoreMod.MODID, name = ArtanCoreMod.NAME, version = ArtanCoreMod.VERSION, dependencies = ArtanCoreMod.DEPENDENCIES)
 public class ArtanCoreMod {
@@ -16,5 +18,10 @@ public class ArtanCoreMod {
     @Mod.EventHandler
     public void construct(FMLConstructionEvent event) {
 
+    }
+
+    @Mod.EventHandler
+    public void init(FMLInitializationEvent event) {
+        RightClickHarvesting.instance.register();
     }
 }
