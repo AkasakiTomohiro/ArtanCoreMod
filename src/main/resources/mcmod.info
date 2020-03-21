@@ -1,0 +1,16 @@
+[
+{
+  "modid": "artancoremod",
+  "name": "Artan Core Mod",
+  "description": "Artan Core Mod.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["t.Akasaki"],
+  "credits": "\"Artan Core\" is making by t.Akasaki",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
